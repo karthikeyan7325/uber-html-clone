@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+              margin: 0%;
+        }
+        nav
+        {
+            border: 2px solid black;
+            height: 65px;
+            width: 100%;
+            background-color: black;
+    
+        }
+        body>nav>div:nth-child(1)
+        {
+            position: relative;
+            color: aliceblue;
+            font-size: 30px;
+            left: 50px;
+            top: 20px;
+        }
+        body>nav>div:nth-child(2)
+        {
+            position: relative;
+            color: aliceblue;
+            left: 152px;
+            bottom:10px;
+        }
+        body>nav>div:nth-child(3)
+        {
+            position: relative;
+            color: aliceblue;
+            left: 214px;
+            bottom:28px;
+        }
+        body>nav>div:nth-child(4)
+        {
+            position: relative;
+            color: aliceblue;
+            left: 280px;
+            bottom:47px;
+        }
+         body>nav>div:nth-child(5)
+        {
+            position: relative;
+            color: aliceblue;
+            left: 368px;
+            bottom:66px;
+        }
+        body>div:nth-child(2)>div
+        {
+            position: absolute;
+            justify-content: center;
+        }
+        body>div:nth-child(2)>div:nth-child(1)
+        {
+            position: absolute;
+            color: rgb(246, 246, 246);
+            right:20%;
+            top: 4%;
+        }
+        body>div:nth-child(2)>div:nth-child(2)
+        {
+            position: absolute;
+            color: rgb(246, 246, 246);
+            right:16%;
+            top: 4%;
+        }
+          body>div:nth-child(2)>div:nth-child(3)
+        {
+            position: absolute;
+            color: rgb(246, 246, 246);
+            right:12%;
+            top: 4%;
+        }
+           body>div:nth-child(2)>div:nth-child(4)
+        {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            background-color: white;
+            border-radius: 50px;
+            height: 4%;
+            width: 5%;
+            color: rgb(18, 17, 17);
+            right:5%;
+            top: 3%;
+        }
+
+        body>div:nth-child(3)>div:nth-child(1)
+        {
+            position:absolute;
+            left: 3%;
+            top: 18%;
+        }
+        body>div:nth-child(3)>a:nth-child(2)
+        {
+            position:absolute;
+            left: 160px;
+            top: 18%;
+        }
+        body>div:nth-child(3)>div:nth-child(3)
+        {
+            position:absolute;
+            left: 38px;
+            top: 25%;
+            font-size: 60px;
+            width: 500px;
+        }
+        body>div:nth-child(3)>i:nth-child(4)
+        {
+            position:absolute;
+            right: 79%;
+            top: 370px;
+            width: 500px;
+            z-index: 1;
+        }
+        body>div:nth-child(3)>div:nth-child(5)
+        {
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 45px;
+            top: 50%;
+            border: 0px solid black;
+            background-color: lightgray;
+            border-radius: 20px;
+            height: 40px;
+            width: 160px;
+        }
+         body>div:nth-child(3)>i:nth-child(6)
+        {
+            position:absolute;
+            right: 72%;
+            top: 370px;
+            width: 500px;
+            z-index: 2;
+        }
+         body>div:nth-child(3)>i:nth-child(7)
+        {
+            position:absolute;
+            right: 79%;
+            top: 452px;
+            width: 500px;
+            z-index: 1;
+        }
+        body>div:nth-child(3)>div:nth-child(8)
+        {
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 45px;
+            top: 60%;
+            border: 0px solid black;
+            background-color: lightgray;
+            color: gray;
+            border-radius: 10px;
+            width: 400px;
+            height: 60px;
+            text-indent: -150px;
+            font-size: 17px;
+        }
+        body>div:nth-child(3)>i:nth-child(9)
+        {
+            position:absolute;
+            right: 57%;
+            top: 452px;
+            width: 500px;
+            z-index: 1;
+        }
+         body>div:nth-child(3)>i:nth-child(10)
+        {
+            position:absolute;
+            right: 79%;
+            top: 544px;
+            width: 500px;
+            z-index: 1;
+        }
+        body>div:nth-child(3)>div:nth-child(11)
+        {
+            position:absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 45px;
+            top: 73%;
+            border: 0px solid black;
+            background-color: lightgray;
+            color: gray;
+            border-radius: 10px;
+            width: 400px;
+            height: 60px;
+            text-indent: -150px;
+             font-size: 17px;
+        }
+
+        body>section:nth-child(4)
+        {
+            left: 55%;
+            top: 20%;
+            height: 500px;
+            width: 500px;
+            background-image: url(uber.svg);
+            background-repeat: no-repeat;
+            background-size: 500px 500px;
+            position: absolute;
+        }
+        body>div:nth-child(5)
+        {
+            height: 68px;
+            width: 435px;
+            border: 2px solid rgb(6, 6, 6);
+            border-radius: 30px;
+            background-color: rgb(228, 6, 6);
+            color: aliceblue;
+            position: absolute;
+            display: flex;
+            justify-content:none;
+            align-items: center;
+            bottom: 12%;
+            left: 57%;
+        }
+        body>div:nth-child(5)>p:nth-child(1)
+        {
+            position: relative;
+            left: 5%;
+        }
+        body>div:nth-child(5)>h4:nth-child(2)
+        {
+            border: 1px solid yellow;
+            border-radius: 20px;
+            color: black;
+            background-color: yellow;
+            width: 130px;
+            padding: 10px 5px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 260px;
+            top: 20%;
+            height: 20px;
+        }
+        body>div:nth-child(6)>p:nth-child(1)
+        {
+            height: 50px;
+            width: 110px;
+            border: 1px solid black;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 550px;
+            left: 55px;
+            background-color: black;
+            color: white;
+        }
+         body>div:nth-child(6)>p:nth-child(2)
+         {
+            position: absolute;
+            top: 89%;
+            left: 12%;
+            color: black;
+        }
+        body>div:nth-child(7)
+         {
+             height: 50px;
+            width: 580px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 610px;
+            right:-30px;
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+        }
+
+        body>div:nth-child(8)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            position: relative;
+            top: 650px;
+            right:-38px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(8)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 15px;
+        }
+        body>div:nth-child(8)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 225px;
+            height: 10px;
+            left: 20px;
+            top: 40px;
+        }
+        body>div:nth-child(8)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: -50px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(8)>img:nth-child(4)
+        {
+            position: relative;
+            height: 180px;
+            width: 180px;
+            left: 120px;
+            top: -10px;
+        }
+
+        body>div:nth-child(9)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            position: relative;
+            top: 465px;
+            left:460px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(9)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 18px;
+        }
+        body>div:nth-child(9)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 225px;
+            height: 10px;
+            left: 20px;
+            top: 42px;
+        }
+        body>div:nth-child(9)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: 10px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(9)>img:nth-child(4)
+        {
+            position: relative;
+            height: 120px;
+            width: 230px;
+            left: 120px;
+            top: 20px;
+        }
+        
+
+        body>div:nth-child(10)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            position: relative;
+            top:280px;
+            left:58%;
+            font-size: 40px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(10)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 18px;
+        }
+        body>div:nth-child(10)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 188px;
+            height: 10px;
+            left: 20px;
+            top: 42px;
+        }
+        body>div:nth-child(10)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: -35px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(10)>img:nth-child(4)
+        {
+            position: relative;
+            height: 170px;
+            width: 170px;
+            left: 120px;
+            bottom: 10px;
+        }
+
+        body>div:nth-child(11)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            position: relative;
+            top: 320px;
+            right:-38px;
+            font-size: 40px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(11)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 18px;
+        }
+        body>div:nth-child(11)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 192px;
+            height: 10px;
+            left: 20px;
+            top: 42px;
+        }
+        body>div:nth-child(11)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: -35px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(11)>img:nth-child(4)
+        {
+            position: relative;
+            height: 170px;
+            width: 170px;
+            left: 120px;
+            bottom: 10px;
+        }
+
+        body>div:nth-child(12)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            position: relative;
+            top: 138px;
+            left:460px;
+            font-size: 40px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(12)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 18px;
+        }
+        body>div:nth-child(12)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 250px;
+            height: 10px;
+            left: 20px;
+            top: 42px;
+        }
+        body>div:nth-child(12)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: -18px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(12)>img:nth-child(4)
+        {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            left: 140px;
+            bottom: 10px;
+        }
+
+        body>div:nth-child(13)
+         {
+            height: 180px;
+            width: 380px;
+            border: 0px black solid ;
+            position: relative;
+            top:-45px;
+            left:58%;
+            font-size: 40px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(239, 239, 239);
+        }
+        body>div:nth-child(13)>div:nth-child(1)
+        {
+            position: relative;
+            font-size: 20px;
+            width: 5px;
+            height: 10px;
+            left: 20px;
+            top: 18px;
+        }
+        body>div:nth-child(13)>div:nth-child(2)
+        {
+            position: relative;
+            font-size: 15px;
+            width: 250px;
+            height: 10px;
+            left: 20px;
+            top: 42px;
+        }
+        body>div:nth-child(13)>button:nth-child(3)
+        {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            left: 25px;
+            top: 15px;
+            border: 0px solid white;
+            border-radius: 20px;
+            background-color: white;
+            color: black;
+        }
+        body>div:nth-child(13)>img:nth-child(4)
+        {
+            position: relative;
+            height: 120px;
+            width: 170px;
+            left: 135px;
+            bottom: -10px;
+        }
+
+        body>h1:nth-child(14)
+        {
+            position: absolute;
+            left: 42px;
+            top: 1260px;
+        }
+        body>div:nth-child(15)
+        {
+            height: 400px;
+            width: 700px;
+            border: 1px solid lightblue;
+            border-radius: 15px;
+            background-image: url(clockimg.jpeg);
+            background-repeat: no-repeat;
+            background-size: 700px 400px;
+            position: relative;
+            left: 35px;
+            top: 70px;
+        }
+        body>div:nth-child(15)>div:nth-child(1)>h1:nth-child(1)
+        {
+            width: 300px;
+            position: relative;
+            top: 80px;
+            left: 30px;
+            font-size: 36px;
+        }
+        body>div:nth-child(15)>div:nth-child(2)>h4:nth-child(1)
+        {
+            position: relative;
+            top: 120px;
+            left: 35px;
+            font-size: 20px;
+        }
+        body>div:nth-child(15)>div:nth-child(3)
+        {
+            position: relative;
+            top: 130px;
+            left: 35px;
+            font-size: 17px;
+            color: rgb(113, 113, 113);
+        }
+        body>div:nth-child(15)>div:nth-child(4)
+        {
+            position: relative;
+            top: 111px;
+            left: 220px;
+            font-size: 17px;
+            color: rgb(113, 113, 113);
+        }
+        body>div:nth-child(15)>input:nth-child(5)
+        {
+            position: relative;
+            top: 115px;
+            left: 35px;
+            height: 50px;
+            width: 170px;
+            border-radius: 10px;
+            border: 0;
+        }
+        body>div:nth-child(15)>input:nth-child(6)
+        {
+           position: relative;
+            top: 115px;
+            left: 42px;
+            height: 50px;
+            width: 170px;
+            border-radius: 10px;
+            border: 0; 
+        }
+        body>div:nth-child(15)>button:nth-child(7)
+        {
+            width: 290px;
+            position: absolute;
+            top: 335px;
+            left: 30px;
+            justify-content: center;
+            height: 50px;
+            width: 365px;
+            border-radius: 10px;
+            border: 0;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+        body>div:nth-child(16)
+        {
+            height: 300px;
+            width: 390px;
+            border: 1px solid rgb(240, 239, 239);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: 10px;
+            left: 760px;
+            top: -330px;
+        }
+        body>div:nth-child(16)>h2:nth-child(1)
+        {
+            position: relative;
+            top: 20px;
+            left: 10px;
+
+        }
+        body>div:nth-child(16)>i:nth-child(2)
+        {
+            position: relative;
+            top: 69px;
+            left: 50px;
+        }
+        body>div:nth-child(16)>p:nth-child(3)
+        {
+            position: relative;
+            top: 42px;
+            left: 80px;
+            font-size: 18px;
+            width: 280px;
+        }
+        body>div:nth-child(16)>i:nth-child(4)
+        {
+            position: relative;
+            top: 69px;
+            left: 50px;
+        }
+        body>div:nth-child(16)>p:nth-child(5)
+        {
+            position: relative;
+            top: 42px;
+            left: 80px;
+            font-size: 18px;
+            width: 280px;
+        }
+        body>div:nth-child(16)>i:nth-child(6)
+        {
+            position: relative;
+            top: 69px;
+            left: 50px;
+        }
+        body>div:nth-child(16)>p:nth-child(7)
+        {
+            position: relative;
+            top: 42px;
+            left: 80px;
+            font-size: 18px;
+            width: 280px;
+        }
+        body>div:nth-child(16)>button:nth-child(8)
+        {
+            border: 0;
+            text-decoration: underline;
+            font-size: 15px;
+            position: relative;
+            top: 68px;
+            left: -150px;
+            background-color: transparent;
+            cursor: pointer;
+            color: gray;
+            font-size: 16px;
+        }
+
+        body>div:nth-child(17){
+            height: 480px;
+            width: 100vw;
+            background-image: url(black.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 500px;
+            position: relative;
+            top: -200px;
+        }
+        body>div:nth-child(17)>h1:nth-child(1)
+        {
+            color: white;
+            position: absolute;
+            top: 150px;
+            left: 180px;
+            font-size: 40px;
+        }
+        body>div:nth-child(17)>p:nth-child(2)
+        {
+            color: white;
+            position: absolute;
+            top: 220px;
+            left: 180px;
+            width: 450px;   
+            font-size: 18px;
+        }
+        body>div:nth-child(17)>button:nth-child(3){
+            color: rgb(8, 8, 8);
+            position: absolute;
+            top: 300px;
+            left: 180px;
+            height: 45px;
+            width: 120px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 0;   
+        }
+
+        body>div:nth-child(18)>h1:nth-child(1)
+        {
+            height: 295px;
+            width: 300px;
+            border: 1px;
+            border-left: 18px solid black;
+            border-right: 18px solid black;
+            z-index: 100;
+            position: relative;
+            bottom: 140px;
+            left: 293px;
+            display: flex;
+            justify-content: center;
+        }
+        body>div:nth-child(19)
+        {
+            height: 190px;
+            width: 380px;
+            border: 1px solid rgb(232, 231, 231); 
+            z-index: 101;
+            position: absolute  ;
+            top: 2380px;
+            left: 268px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        body>div:nth-child(19)>h1:nth-child(1)
+        {
+            display: flex;
+            justify-content: start;
+            font-size: 25px;
+            position: relative;
+            left: 15px;
+            top: 15px;
+            background-color: white;
+        }
+        body>div:nth-child(19)>i:nth-child(2)
+        {
+           display: flex;
+            position: relative;
+            top:40px;
+            left: 15px;
+            font-size: 20px;
+            z-index: 100;
+        }
+        body>div:nth-child(19)>p:nth-child(3)
+        {
+            display: flex;
+            position: relative;
+            top:20px;
+            left: 21px;
+            color: rgb(245, 243, 243);
+            z-index: 101;
+        }
+        body>div:nth-child(19)>p:nth-child(4)
+        {
+            display: flex;
+            position: relative;
+            top: -10px;
+            left: 58px;
+            color: rgb(0, 0, 0);
+            z-index: 101;
+            font-size: 17px;
+        }
+        body>div:nth-child(19)>div:nth-child(5)
+        {
+            display: flex;
+            position: relative;
+            top: -5px;
+            left: 56px;
+            height: 15px;
+            width: 130px;
+            background-color: rgb(236, 236, 236);
+        }
+        body>div:nth-child(19)>i:nth-child(6)
+        {
+            display: flex;
+            position: relative;
+            top: -34px;
+            left: 340px;
+            font-size: 20px;
+            z-index: 100;
+        }
+        body>div:nth-child(19)>hr:nth-child(7)
+        {
+            display: flex;
+            position: relative;
+            top: -10px;
+            left: 60px;
+            width: 320px;
+            color: rgb(255, 253, 253);
+        }
+        body>div:nth-child(19)>i:nth-child(8)
+        {
+            display: flex;
+            justify-content: start;
+            font-size: 20px;
+            position: relative;
+            left: 14px;
+            top: 18px;
+            background-color: white;
+        }
+        body>div:nth-child(19)>p:nth-child(9)
+        {
+            display: flex;
+            position: relative;
+            top:-3px;
+            left: 20px;
+            color: white;
+            z-index: 101;
+        }
+        body>div:nth-child(19)>p:nth-child(10)
+        {
+            display: flex;
+            position: relative;
+            top:-33px;
+            left: 55px;
+            font-size: 17px;
+        }
+        body>div:nth-child(19)>div:nth-child(11)
+        {
+            display: flex;
+            position: relative;
+            top: -28px;
+            left: 56px;
+            height: 15px;
+            width: 130px;
+            background-color: rgb(236, 236, 236);
+        }
+       body>div:nth-child(19)>i:nth-child(12)
+       {
+        display: flex;
+            position: relative;
+            top: -54px;
+            left: 340px;
+            font-size: 20px;
+            z-index: 100;
+       }
+
+       body>div:nth-child(20)
+       {
+           height: 400px;
+            width: 300px;
+            border: 1px solid black;
+            position: relative;
+            top: -400px;
+            left: 900px;
+            border: 0;
+       }
+       body>div:nth-child(20)>h1:nth-child(1)
+       {
+           height: 400px;
+            width: 300px;
+            border: 1px solid rgb(9, 9, 9);
+            position: relative;
+            top: -15px;
+            left:-30px;
+            border: 0;
+            font-size: 40px;
+       }
+       body>div:nth-child(20)>p:nth-child(2)
+       {
+            width: 490px;
+            position: relative;
+            left: -29px;
+            top: -290px;
+            font-size: 20px;
+            color: black;
+       }
+       body>div:nth-child(20)>button:nth-child(3)
+       {
+        position: relative;
+            left: -35px;
+            top: -250px;
+            border: 0;
+            font-size: 15px;
+            color: gray;
+            background-color: white;
+            text-decoration: underline;
+       }
+        body>div:nth-child(21){
+            position: relative;
+            bottom:450px;
+            left: 100px;
+
+        }
+        body>div:nth-child(22){
+            height: 600px;
+            width: 350px;
+            border: 1px solid black;  
+            position: relative;   
+            top: -405px;  
+            left: 100px;
+            border: 0;
+        }
+        body>div:nth-child(22)>div:nth-child(1){
+            height: 400px ;
+            width: 350px;
+            background-image: url(help\ car.png);
+            background-repeat: no-repeat;
+            background-size: 350px 400px;
+        }
+        body>div:nth-child(22)>div:nth-child(1)>div:nth-child(1){
+            position: relative;
+            top: 420px;
+        }
+        body>div:nth-child(22)>div:nth-child(1)>div:nth-child(2){
+            position: relative;
+            top: 450px;
+        }
+        body>div:nth-child(22)>div:nth-child(1)>div:nth-child(3)>button{
+            position: relative;
+            top: 500px;
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 0;
+        }
+        /* hj */
+        body>div:nth-child(22)>div:nth-child(2){
+            height: 400px ;
+            width: 350px;
+            background-image: url(helpman.png);
+            background-repeat: no-repeat;
+            background-size: 350px 400px;
+            position: relative;
+            left: 430px;
+            top: -400px;
+            
+        }
+        body>div:nth-child(22)>div:nth-child(2)>div:nth-child(1){
+            position: relative;
+            top: 420px;
+        }
+        body>div:nth-child(22)>div:nth-child(2)>div:nth-child(2){
+            position: relative;
+            top: 450px;
+            width: 370px;
+            text-align: justify;
+        }
+        body>div:nth-child(22)>div:nth-child(2)>div:nth-child(3)>button{
+            position: relative;
+            top: 485px;
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 0;
+        }
+        /* lk */
+        body>div:nth-child(22)>div:nth-child(3){
+            height: 400px ;
+            width: 350px;
+            background-image: url(helpwomen.png);
+            background-repeat: no-repeat;
+            background-size: 350px 400px;
+            position: relative;
+            left: 850px;
+            top: -800px;
+            
+        }
+        body>div:nth-child(22)>div:nth-child(3)>div:nth-child(1){
+            position: relative;
+            top: 420px;
+        }
+        body>div:nth-child(22)>div:nth-child(3)>div:nth-child(2){
+            position: relative;
+            top: 450px;
+            width: 390px;
+            text-align: justify;
+        }
+        body>div:nth-child(22)>div:nth-child(3)>div:nth-child(3)>button{
+            position: relative;
+            top: 495px;
+            height: 40px;
+            width: 150px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 0;
+        }
+        body>section:nth-child(23){
+            display: flex;
+            height: 560px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+            top: -320px;
+        }
+        body>section:nth-child(23)>div:nth-child(1){
+            position: absolute;
+            top: 60px;
+            left: 200px;
+            color: white;
+            width: 500px;
+            font-size: 20px ;
+        }
+        body>section:nth-child(23)>div:nth-child(2)>p{
+            position: absolute;
+            top: 185px;
+            left: 200px;
+            color: white;
+            width: 500px;
+            font-size: 19px;
+            display: flex;
+        }
+         body>section:nth-child(23)>div:nth-child(3)>button{
+            background-color: black;
+            border: 0;
+            color: white;
+            position: absolute;
+            top: 215px;
+            width: 155px;
+            right: 1180px;
+            font-size: 15px;
+            text-decoration: underline;
+        }
+         body>section:nth-child(23)>div:nth-child(4)>ul{
+            color: white;
+            width: 100px;
+            position: absolute;
+            top: 260px;
+            right: 1160px;
+        }
+        body>section:nth-child(23)>div:nth-child(4)>ul>li{
+            padding-bottom: 15px;
+            font-size: 17px;
+            width: 200px;
+            text-decoration: underline;
+        }
+         body>section:nth-child(23)>div:nth-child(5){
+            position: absolute;
+            top: 420px;
+            right: 920px;
+            width: 400px;
+            
+        }
+        body>section:nth-child(23)>div:nth-child(5)>button{
+            height: 50px;
+            width: 130px;
+            border: 0;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+        body>section:nth-child(23)>div:nth-child(6){
+            position: absolute;
+            top: 435px;
+            left: 345px;
+            width: 200px;
+        } 
+
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+        body>section:nth-child(23)>div:nth-child(6)>button{
+            border: 0;
+            background-color: black;
+            color: white;
+            text-decoration: underline;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        body>section:nth-child(23)>div:nth-child(7){
+            height: 300px;
+            width: 550px;
+            background-image: url(uber-work.png);
+            background-repeat: no-repeat;
+            background-size: 550px 300px;
+            position: absolute;
+            top: 120px;
+            left: 750px;
+        }
+        body>div:nth-child(24){
+            position: relative;
+            top: -280px;
+            left: 100px;
+            font-size: 20px;
+        }
+        body>div:nth-child(25){
+            position: relative;
+            top: -250px;
+        }
+        body>div:nth-child(25)>p:nth-child(1){
+            position: relative;
+            left: 90px;
+            padding: 20px;
+        }
+        body>div:nth-child(25)>p:nth-child(3){
+            position: relative;
+            left: 90px;
+            padding: 20px;
+        }
+        body>div:nth-child(25)>p:nth-child(5){
+            position: relative;
+            left: 90px;
+            padding: 20px;
+        }
+        body>div:nth-child(25)>p:nth-child(7){
+            position: relative;
+            left: 90px;
+            padding: 20px;
+        }
+        body>div:nth-child(25)>p:nth-child(9){
+            position: relative;
+            left: 90px;
+            padding: 20px;
+        }
+        body>div:nth-child(25)>i:nth-child(2){
+            position: relative;
+            left: 1100px;
+            top: -45px;
+        }
+        body>div:nth-child(25)>i:nth-child(4){
+            position: relative;
+            left: 1100px;
+            top: -45px;
+        }
+        body>div:nth-child(25)>i:nth-child(6){
+            position: relative;
+            left: 1100px;
+            top: -45px;
+        }
+        body>div:nth-child(25)>i:nth-child(8){
+            position: relative;
+            left: 1100px;
+            top: -45px;
+        }
+        body>div:nth-child(25)>i:nth-child(10){
+            position: relative;
+            left: 1100px;
+            top: -45px;
+        }
+        body>section:nth-child(26){
+            height: 400px;
+            width: 100%;
+            background-color: rgb(248, 247, 247);
+            position: relative;
+            top: -240px;
+        }
+        body>section:nth-child(26)>div:nth-child(1){
+            position: relative;
+            left: 180px;
+            top: 68px;
+            font-size: 21px;
+        }
+        body>section:nth-child(26)>div:nth-child(2){
+            height: 200px;
+            width: 535px;
+            background-color: white;
+            position: relative;
+            top: 110px;
+            left: 180px;
+        }
+        body>section:nth-child(26)>div:nth-child(2)>div:nth-child(1){
+            height: 150px;
+            width: 150px;
+            background-image: url(https://www.busfin.uillinois.edu/UserFiles/Servers/Server_1988658/Image/uber-for-business-qr.png);
+            background-repeat: no-repeat;
+            background-size: 150px 150px;
+            position: relative;
+            top: 25px;
+            left: 30px;
+        }
+        body>section:nth-child(26)>div:nth-child(2)>div:nth-child(2){
+            position: relative;
+            left: 210px;
+            top: -65px;
+        }
+        body>section:nth-child(26)>div:nth-child(2)>div:nth-child(3){
+            position: relative;
+            left: 210px;
+            top: -58px;
+        }
+        body>section:nth-child(26)>div:nth-child(2)>div:nth-child(4){
+            position: relative;
+            left: 495px;
+            top: -100px;
+        }
+        body>section:nth-child(26)>div:nth-child(3){
+            height: 200px;
+            width: 535px;
+            background-color: white;
+            position: relative;
+            top: -90px;
+            left: 750px;
+        }
+        body>section:nth-child(26)>div:nth-child(3)>div:nth-child(1){
+            height: 100px;
+            width: 100px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3r5Pp8196JW12Uxw4kiUZbcUEFFmoaJgQgNesHKkUCmbF9BlWturF2c0&s=10);
+            background-repeat: no-repeat;
+            background-size: 100px 100px;
+            position: relative;
+            top: 50px;
+            left: 20px;
+        }
+        body>section:nth-child(26)>div:nth-child(3)>div:nth-child(2){
+            position: relative;
+            left: 160px;
+            top: -10px;
+        }
+        body>section:nth-child(26)>div:nth-child(3)>div:nth-child(3){
+            position: relative;
+            left: 495px;
+            top: -29px;
+        }
+        body>div:nth-child(27){
+            position: relative;
+            width: 90%;
+            top: -190px;
+        }
+        body>div:nth-child(27)>p:nth-child(1){
+            position: relative;
+            left: 50px;
+        }
+        body>div:nth-child(27)>p:nth-child(2){
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+        body>div:nth-child(27)>p:nth-child(3){
+            position: relative;
+            left: 50px;
+            top: 40px;
+        }
+        body>div:nth-child(27)>p:nth-child(4){
+            position: relative;
+            left: 50px;
+            top: 60px;
+        }
+        body>div:nth-child(27)>p:nth-child(5){
+            position: relative;
+            left: 50px;
+            top: 80px;
+        }
+        body>div:nth-child(27)>p:nth-child(6){
+            position: relative;
+            left: 50px;
+            top: 100px;
+        }
+        body>div:nth-child(27)>p:nth-child(7){
+            position: relative;
+            left: 50px;
+            top: 160px;
+        }
+        body>section:nth-child(28){
+            height: 800px;
+            width: 100%;
+            background-color: black;
+            position: relative;
+        }
+        body>section:nth-child(28)>div:nth-child(1){
+            color: white;
+            position: relative;
+            top: 90px;
+            left: 60px;
+        }
+        body>section:nth-child(28)>div:nth-child(2){
+            color: white;
+            position: relative;
+            top: 110px;
+            left: 60px;
+        }
+        body>section:nth-child(28)>div:nth-child(3){
+            color: black;
+            position: relative;
+            top: 130px;
+            left: 60px;
+            width: 100px;
+            text-decoration: underline;
+        }
+        body>section:nth-child(28)>div:nth-child(3):hover{
+            color: white;
+        }
+        body>section:nth-child(28)>div:nth-child(4){
+            color: white;
+            position: relative;
+            top: 180px;
+            left: 60px;
+        }
+        body>section:nth-child(28)>div:nth-child(4)>a{
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        body>section:nth-child(28)>div:nth-child(4)>a:hover{
+            color: gray;
+        }
+        body>section:nth-child(28)>div:nth-child(5){
+            color: white;
+            position: absolute;
+            top: 264px;
+            left: 410px;
+        }
+        body>section:nth-child(28)>div:nth-child(5)>a{
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        body>section:nth-child(28)>div:nth-child(5)>a:hover{
+            color: gray;
+        }
+        body>section:nth-child(28)>div:nth-child(6){
+            color: white;
+            position: absolute;
+            top: 264px;
+            left: 700px;
+        }
+        body>section:nth-child(28)>div:nth-child(6)>a{
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        body>section:nth-child(28)>div:nth-child(6)>a:hover{
+            color: gray;
+        }
+        body>section:nth-child(28)>div:nth-child(7){
+            color: white;
+            position: absolute;
+            top: 264px;
+            left: 1050px;
+        }
+        body>section:nth-child(28)>div:nth-child(7)>a{
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 10px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+        }
+        body>section:nth-child(28)>div:nth-child(7)>a:hover{
+            color: gray;
+        }
+        body>section:nth-child(28)>div:nth-child(8){
+            display: flex;
+            width: 200px;
+            justify-content: space-around;
+            position: relative;
+            top: 300px;
+            left: 40px;
+        }
+        body>section:nth-child(28)>div:nth-child(9){
+            height: 130px;
+            width: 150px;
+            background-image: url(https://images.seeklogo.com/logo-png/29/2/get-it-on-google-play-badge-logo-png_seeklogo-290335.png);
+            background-repeat: no-repeat;
+            background-size: 150px 130px ;
+            position: relative;
+            top: 300px;
+            left: 60px;
+        }
+        body>section:nth-child(28)>div:nth-child(10){
+            height: 150px;
+            width: 150px;
+            background-image: url(https://images.seeklogo.com/logo-png/26/2/download-on-the-app-store-flat-badge-logo-png_seeklogo-268334.png);
+            background-repeat: no-repeat;
+            background-size: 150px 150px ;
+            position: relative;
+            top: 160px;
+            left: 210px;
+        }
+        body>section:nth-child(28)>div:nth-child(11){
+            position: relative;
+            left: 900px;
+        }
+        body>section:nth-child(28)>div:nth-child(12){
+            color: white;
+            position: relative;
+            left: 935px;
+            top: -18px;
+        }
+        body>section:nth-child(28)>div:nth-child(13){
+            position: relative;
+            left: 1050px;
+            top: -34px;
+        }
+        body>section:nth-child(28)>div:nth-child(14){
+            color: white;
+            position: relative;
+            left: 1090px;
+            top: -52px;
+        }
+        body>footer{
+            position: relative;
+            top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        body>footer>button{
+            width: 99%;
+            height: 60px;
+            background-color: black;
+            justify-content: center;
+            color: white;
+            font-size: 20px;      
+            position: sticky;      
+        }        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Uber</div>
+        <div>Ride</div>
+        <div>Drive</div>
+        <div>Business</div>
+        <div>About <i class="fa-solid fa-angle-down" style="color: rgb(255, 253, 253);" ></i> </div>
+    </nav>
+
+    <div>
+        <div><i class="fa-solid fa-globe" style="color: rgb(255, 253, 253);"></i>En</div>
+        <div>Help</div>
+        <div>Login</div>
+        <div>Sign up</div>
+    </div>
+
+    <div>
+        <div> <i class="fa-solid fa-location-dot" style="color: rgb(12, 12, 12);"></i> Banglore, IN</div>
+        <a href="">Change city</a>
+        <div>Go any where with uber</div>
+
+        <i class="fa-regular fa-clock" style="color: gray;"></i>
+        <div> pickup now </div>
+        <i class="fa-solid fa-angle-down" style="color: gray;"></i>
+        
+        <i class="fa-solid fa-location-dot" style="color: gray;"></i>
+        <div> pickup location </div>
+        <i class="fa-solid fa-location-arrow" style="color: gray;"></i>
+
+        <i class="fa-solid fa-map-location-dot" style="color: gray;"></i>
+        <div> Drop location</div>
+
+    </div>
+
+    <section></section>
+
+        <div>
+            <p>Ready to travel?</p>
+            <h4>Schedule ahead</h4>
+        </div>
+    
+    <div>
+        <p>See price</p>
+        <P>Login to see your recent activity</P>
+    </div>
+
+    <div>Explore what you can do with Uber</div>
+
+    <div>
+        <div>Ride</div>
+        <div>Go anywhere with Uber. Request a ride, hop in, and go.</div>
+        <button>Details</button>
+        <img src="car.png" alt="">
+    </div>
+
+    <div>
+        <div>Reserve</div>
+        <div>Reserve your ride in advance so you can relax on the day of your trip.</div>
+        <button>Details</button>
+        <img src="calender.webp" alt="">
+    </div>
+
+     <div>
+        <div>Intercity</div>
+        <div>Get convenient, affordable outstation cabs anytime at your door.</div>
+        <button>Details</button>
+        <img src="pick.png" alt="">
+    </div>
+
+     <div>
+        <div>Shuttle</div>
+        <div>Lower-cost shared rides on professionally driven buses and vans.</div>
+        <button>Details</button>
+        <img src="bus.svg" alt="">
+    </div>
+
+    <div>
+       <div>Parcel</div>
+        <div>Uber makes same-day item delivery easier than ever.</div>
+        <button>Details</button>
+        <img src="parcel.png" alt="">
+    </div>
+
+     <div>
+        <div>Rentals</div>
+        <div>Request a trip for a block of time and make multiple stops.</div>
+        <button>Details</button>
+        <img src="cartime.webp" alt="">
+    </div>
+
+    <h1>Plan for later</h1>
+
+    <div>
+            <div><h1>Get your ride right with Uber Reserve</h1></div>
+            <div><h4>Choose Date and Time</h4></div>
+            <div>Date</div>
+            <div>Time</div>
+            <input type="date" placeholder="Date">
+            <input type="time" placeholder="Time">
+            <button>Next</button>
+        </div>
+
+        <div>
+            <h2>Benefits</h2>
+            <i class="fa-solid fa-calendar" style="color: rgb(5, 5, 5);"></i>
+            <p>Choose your exact pickup time up to 90 days in advance.</p>
+            <i class="fa-solid fa-clock" style="color: rgb(5, 5, 5);"></i>
+            <p>Extra wait time included to meet your ride.</p>
+            <i class="fa-solid fa-caret-down" style="color: rgb(5, 5, 5);"></i>
+            <p>Cancel at no charge up to 60 minutes in advance.</p>
+            <button>See terms</button>
+        </div>
+
+    <div>
+        <h1>Uber One</h1>
+        <p>One membership for member pricing and experiences on rides, deliveries, and more.</p>
+        <button>Try it now</button>
+    </div>
+
+    <div>
+        <h1>Brain's group ride</h1>
+    </div>
+       <!-- 19 -->
+    <div>
+            <h1>Set Pickup order</h1>
+            <i class="fa-solid fa-circle" style="color: rgb(5, 5, 5);"></i>
+            <p>1</p>
+            <p>Brain</p>
+            <div></div>
+            <i class="fa-solid fa-grip-lines" style="color: rgb(5, 5, 5);"></i>
+            <hr>
+            <i class="fa-solid fa-circle" style="color: rgb(5, 5, 5);"></i>
+            <p>2</p>
+            <p>Sarah</p>
+            <div></div>
+            <i class="fa-solid fa-grip-lines" style="color: rgb(5, 5, 5);"></i>
+        </div>
+        <div>
+            <h1>Ride with friends seamlessly</h1>
+            <p>Riding with friends just got easier: set up a group ride in the Uber app, invite your friends, and arrive at your destination. Friends who ride together save together.</p>
+            <button>Learn more</button>
+        </div>
+
+        <div>
+        <h1>Use the Uber app to help you travel your way</h1>
+    </div>
+
+    <div>
+        <div>
+            <div><h2>Ride options</h2></div>
+            <div><p>There’s more than one way to move with Uber, no matter where you are or where you’re headed next.</p></div>
+            <div><button>Search ride options</button></div>
+        </div>
+        <div>
+            <div><h2>700+ airports</h2></div>
+            <div><p>You can request a ride to and from most major airports. Schedule a ride to the airport for one less thing to worry about.</p></div>
+            <div><button>Search airports</button></div>
+        </div>
+        <div>
+            <div><h1>15000+ cities</h1></div>
+            <div><p>The app is available in thousands of cities worldwide, so you can request a ride even when you’re far from home.</p></div>
+            <div><button>Search cities</button></div>
+        </div>
+    </div>
+
+    <section>
+        <div>
+            <h1>Looking for business solutions?</h1>
+        </div>
+        <div>
+            <p>Get information about how companies leverage  </p>
+        </div>
+        <div>
+            <button>Uber for business:</button>
+        </div>
+        <div>
+            <ul>
+                <li>Business travel</li>
+                <li>Courtesy rides</li>
+                <li>Meal programs</li>
+                <li>Item delivery</li>
+            </ul>
+        </div>
+        <div>
+            <button>Get started</button>
+        </div>
+        <div><button>Check out for solutions</button></div>
+        <div></div>
+    </section>
+
+    <div>
+        <h1>Frequently asked questions</h1>
+    </div>
+
+    <div>
+        <p>Can I have a lost item delivered to me?</p>
+        <i class="fa-solid fa-angle-down" style="color: rgb(5, 5, 5);"></i>
+        <p>Can I rent a car using Uber?</p>
+        <i class="fa-solid fa-angle-down" style="color: rgb(5, 5, 5);"></i>
+        <p>Can i request a ride that picks up friends in different locations?</p>
+        <i class="fa-solid fa-angle-down" style="color: rgb(5, 5, 5);"></i>
+        <p>Can i request a taxi on Uber?</p>
+        <i class="fa-solid fa-angle-down" style="color: rgb(5, 5, 5);"></i>
+        <p>Is there an Uber ride option for 5 people?</p>
+        <i class="fa-solid fa-angle-down" style="color: rgb(5, 5, 5);"></i>
+    </div>
+
+    <section>
+        <div>
+            <h1>Do more in the app</h1>
+        </div>
+        <div>
+            <div></div>
+            <div>
+                <h2>Download the Uber app</h2>
+            </div>
+            <div>
+                <p>Scan to download</p>
+            </div>
+            <div><i class="fa-solid fa-arrow-right" style="color: rgb(5, 5, 5);"></i></div>
+        </div>
+        <div>
+            <div>
+
+            </div>
+            <div>
+                <h2>Signup to ride</h2>
+            </div>
+            <div>
+                <i class="fa-solid fa-arrow-right" style="color: rgb(5, 5, 5);"></i>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <p>*Join the millions of riders who trust Uber for their everyday travel needs. Get doorstep pickup and dropoff to your chosen destination at the tap of a button. Select from a wide range of affordable options, such as Uber Auto, Uber Moto, and Cabs.</p>
+        <p>Limited-period offer: Discount on first 5 trips (cab, auto or moto) completed within 14 days of signing up. The offer is valid only for first-time users. The promotion shall apply automatically to eligible rides. Download the Uber app now to request your first ride.</p>
+        <p>Discounts applicable - (i) For cab rides- 100% discount (maximum discount of INR 100 per ride) (ii) For moto rides- 100% discount (maximum discount of INR 45 per ride) (iii) For auto rides- 100% discount (maximum discount of INR 70 per ride)</p>
+        <p>This offer cannot be combined with any other offers or promo codes.</p>
+        <p>The offer is non-transferable and limited to one per user/account.</p>
+        <p>Uber reserves the right to alter, suspend or withdraw the promotion offer in the future at its sole discretion without any prior notice. Terms and conditions apply.</p>
+        <p>Certain requirements and features vary by country, region, and city.</p>
+    </div>
+    <section>
+        <div>
+            <h1>Uber</h1>
+        </div>
+        <div>
+            <h2>Visit help center</h2>
+        </div>
+        <div>
+            <p>________________</p>
+        </div>
+        <div>
+            <h2>Company</h2>
+            <a href="">About us</a>
+           <a href="">Our offerings</a>
+           <a href="">newsroom</a>
+            <a href="">Investors</a>
+          <a href="">Blog</a>
+            <a href="">Careers</a>
+            <a href="">Uber One</a>
+        </div>
+        <div>
+            <h2>Products</h2>
+            <a href="">Ride</a>
+            <a href="">Drive</a>
+            <a href="">Eat</a>
+            <a href="">Uber for Business</a>
+            <a href="">Uber Freights</a>
+            <a href="">Gift cards</a>
+            <a href="">Uber Health</a>
+            <a href="">Uber Advertising</a>
+        </div>
+        <div>
+            <h2>Global citizeship</h2>
+            <a href="">Safety</a>
+            <a href="">Sustainability</a>
+        </div>
+        <div>
+            <h2>Travel</h2>
+           <a href="">Reserve</a>
+           <a href="">Airports</a>
+           <a href="">Hotels</a>
+           <a href="">Cities</a>
+        </div>
+
+        <div>
+            <div><i class="fa-brands fa-linkedin" style="color: white;"></i></div>
+            <div><i class="fa-brands fa-youtube" style="color: white;"></i></div>
+            <div><i class="fa-brands fa-instagram" style="color: white;"></i></div>
+            <div><i class="fa-brands fa-x-twitter" style="color: white;"></i></div>
+        </div>
+
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <i class="fa-solid fa-globe" style="color: white;"></i>
+        </div>
+        <div>
+            <p>English</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-location-dot" style="color: white;"></i>
+        </div>
+        <div>
+            <p>Bangalore</p>
+        </div>
+    </section>
+    <footer>
+        <button>See prices</button>
+    </footer>
+        
+</body>
+</html>
